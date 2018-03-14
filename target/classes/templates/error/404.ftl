@@ -8,7 +8,7 @@
         <title>Material Admin</title>
             
         <!-- Site CSS -->
-        <link href="css/app-1.min.css" rel="stylesheet">
+        <link href="../css/app-1.min.css" rel="stylesheet">
     </head>
     
     <body>

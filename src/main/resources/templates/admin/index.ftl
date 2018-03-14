@@ -42,8 +42,7 @@
         <header id="header">
             <div class="logo">
                 <a href="index.html" class="hidden-xs">
-                    Material
-                    <small>admin extended dark</small>
+                    Sword Blog
                 </a>
                 <i class="logo__trigger zmdi zmdi-menu" data-mae-action="block-open" data-mae-target="#navigation"></i>
             </div>
@@ -53,7 +52,7 @@
                     <a href=""><i class="zmdi zmdi-search"></i></a>
                 </li>
 
-                <li class="top-menu__apps dropdown hidden-xs hidden-sm">
+                <!--li class="top-menu__apps dropdown hidden-xs hidden-sm">
                     <a data-toggle="dropdown" href="">
                         <i class="zmdi zmdi-apps"></i>
                     </a>
@@ -96,8 +95,8 @@
                             </a>
                         </li>
                     </ul>
-                </li>
-                <li class="dropdown hidden-xs">
+                </li-->
+                <!--li class="dropdown hidden-xs">
                     <a data-toggle="dropdown" href=""><i class="zmdi zmdi-more-vert"></i></a>
                     <ul class="dropdown-menu dropdown-menu--icon pull-right">
                         <li class="hidden-xs">
@@ -113,7 +112,7 @@
                             <a href=""><i class="zmdi zmdi-settings"></i> Other Settings</a>
                         </li>
                     </ul>
-                </li>
+                </li-->
                 <li class="top-menu__alerts" data-mae-action="block-open" data-mae-target="#notifications" data-toggle="tab" data-target="#notifications__messages">
                     <a href=""><i class="zmdi zmdi-notifications"></i></a>
                 </li>
@@ -139,10 +138,10 @@
                 </li>
             </ul>
 
-            <form class="top-search">
+            <!--form class="top-search">
                 <input type="text" class="top-search__input" placeholder="Search for people, files & reports">
                 <i class="zmdi zmdi-search top-search__reset"></i>
-            </form>
+            </form-->
         </header>
 
         <section id="main">
