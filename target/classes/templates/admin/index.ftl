@@ -35,22 +35,22 @@
                         </div>
                     </li>
                     <li class="active">
-                        <a href="index.html"><i class="fa fa-th-large"></i> <span class="nav-label">仪表盘</span></a>
+                        <a href="/admin/home"><i class="fa fa-dashboard"></i> <span class="nav-label">仪表盘</span></a>
                     </li>
                     <li>
-                        <a href="layouts.html"><i class="fa fa-diamond"></i> <span class="nav-label">发布文章</span></a>
+                        <a href="/editpage/index"><i class="fa fa-pencil-square-o"></i> <span class="nav-label">发布文章</span></a>
                     </li>
                     <li>
-                        <a href="#"><i class="fa fa-bar-chart-o"></i> <span class="nav-label">文章管理</span></a>
+                        <a href="#"><i class="fa fa-diamond"></i> <span class="nav-label">文章管理</span></a>
                     </li>
                     <li>
-                        <a href="mailbox.html"><i class="fa fa-envelope"></i> <span class="nav-label">页面管理</span></a>
+                        <a href="mailbox.html"><i class="fa fa-file-text"></i> <span class="nav-label">页面管理</span></a>
                     </li>
                     <li>
-                        <a href="metrics.html"><i class="fa fa-pie-chart"></i> <span class="nav-label">文件管理</span>  </a>
+                        <a href="metrics.html"><i class="fa fa-cloud-upload"></i> <span class="nav-label">文件管理</span>  </a>
                     </li>
                     <li>
-                        <a href="#"><i class="fa fa-edit"></i> <span class="nav-label">其它管理</span><span class="fa arrow"></span></a>
+                        <a href="#"><i class="fa fa-cubes"></i> <span class="nav-label">其它管理</span><span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level collapse">
                             <li><a href="form_basic.html">评论管理</a></li>
                             <li><a href="form_advanced.html">分类/标签</a></li>
@@ -58,10 +58,10 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="#"><i class="fa fa-desktop"></i> <span class="nav-label">主题设置</span></a>
+                        <a href="#"><i class="fa fa-flask"></i> <span class="nav-label">主题设置</span></a>
                     </li>
                     <li>
-                        <a href="#"><i class="fa fa-files-o"></i> <span class="nav-label">系统设置</span></a>
+                        <a href="#"><i class="fa fa-gear"></i> <span class="nav-label">系统设置</span></a>
                     </li>
                 </ul>
 
@@ -145,6 +145,8 @@
     <script src="../js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
     <!-- Custom and plugin javascript -->
     <script src="../js/inspinia.js"></script>
+
+
 
 </body>
 </html>
