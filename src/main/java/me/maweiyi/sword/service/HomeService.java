@@ -1,12 +1,12 @@
 package me.maweiyi.sword.service;
 
-import org.springframework.stereotype.Service;
+import org.springframework.stereotype.Component;
 
 /**
  * @author MWY
  * @date 3/21/18
  */
-@Service
-public class HomeService {
+public interface HomeService {
 
+    Integer findContent();
 }

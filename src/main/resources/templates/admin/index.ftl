@@ -145,8 +145,9 @@
     <script src="../js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
     <!-- Custom and plugin javascript -->
     <script src="../js/inspinia.js"></script>
-
-
+    <script src="../plugins/vue.min.js"></script>
+    <script src="../plugins/axios.js"></script>
+    <script src="../js/admin/index.js"></script>
 
 </body>
 </html>

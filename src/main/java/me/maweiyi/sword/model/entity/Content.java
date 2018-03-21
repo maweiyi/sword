@@ -15,7 +15,6 @@ public class Content {
     private Integer user_id;
     private String content;
     private String status;
-    private Integer comment_num;
 
     public Integer getId() {
         return id;
@@ -73,11 +72,4 @@ public class Content {
         this.status = status;
     }
 
-    public Integer getComment_num() {
-        return comment_num;
-    }
-
-    public void setComment_num(Integer comment_num) {
-        this.comment_num = comment_num;
-    }
 }
