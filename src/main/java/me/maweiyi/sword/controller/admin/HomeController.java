@@ -20,4 +20,9 @@ public class HomeController {
     public String home() {
         return INDEX;
     }
+
+    @RequestMapping("/staticarticle")
+    public Integer staticArticle() {
+
+    }
 }
