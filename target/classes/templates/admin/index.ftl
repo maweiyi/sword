@@ -98,7 +98,7 @@
                                 </div>
                                 <div class="col-xs-8 text-right">
                                     <span> 发表了 </span>
-                                    <h2 class="font-bold">2</h2>
+                                    <h2 class="font-bold">{{staticArticle}}</h2>
                                     <span>篇文章</span>
                                 </div>
                             </div>
@@ -132,6 +132,36 @@
                             </div>
                         </div>
                     </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="ibox float-e-margins">
+                            <div class="ibox-title">
+                                <h5>最新文章</h5>
+                            </div>
+                            <div class="ibox-content">
+
+                                <table class="table">
+                                    <thead>
+                                    <tr>
+                                        <th>文章</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>TestXXXXXXX</td>
+                                    </tr>
+                                    <tr>
+                                        <td>TestXXXXXX</td>
+                                    </tr>
+                                    <tr>
+                                        <td>testXXXXXXX</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+
+                            </div>
+                        </div>
                 </div>
             </div>
         </div>
