@@ -162,6 +162,37 @@
 
                             </div>
                         </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="ibox float-e-margins">
+                            <div class="ibox-title">
+                                <h5>系统日志</h5>
+                            </div>
+                            <div class="ibox-content">
+
+                                <table class="table">
+                                    <thead>
+                                    <tr>
+                                        <th>日志</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>TestXXXXXXX</td>
+                                    </tr>
+                                    <tr>
+                                        <td>TestXXXXXX</td>
+                                    </tr>
+                                    <tr>
+                                        <td>testXXXXXXX</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
