@@ -148,14 +148,8 @@
                                     </tr>
                                     </thead>
                                     <tbody>
-                                    <tr>
-                                        <td>TestXXXXXXX</td>
-                                    </tr>
-                                    <tr>
-                                        <td>TestXXXXXX</td>
-                                    </tr>
-                                    <tr>
-                                        <td>testXXXXXXX</td>
+                                    <tr v-for="item in recentContent">
+                                        <td>{{item.title}}</td>
                                     </tr>
                                     </tbody>
                                 </table>
@@ -177,14 +171,8 @@
                                     </tr>
                                     </thead>
                                     <tbody>
-                                    <tr>
-                                        <td>TestXXXXXXX</td>
-                                    </tr>
-                                    <tr>
-                                        <td>TestXXXXXX</td>
-                                    </tr>
-                                    <tr>
-                                        <td>testXXXXXXX</td>
+                                    <tr v-for="item in recentLog">
+                                        <td>{{item.action}}</td>
                                     </tr>
                                     </tbody>
                                 </table>

@@ -11,7 +11,7 @@ public class Content {
     private Integer id;
     private String title;
     private Date created;
-    private Date update;
+    private Date updated;
     private Integer user_id;
     private String content;
     private String status;
@@ -40,12 +40,12 @@ public class Content {
         this.created = created;
     }
 
-    public Date getUpdate() {
-        return update;
+    public Date getUpdated() {
+        return updated;
     }
 
-    public void setUpdate(Date update) {
-        this.update = update;
+    public void setUpdated(Date updated) {
+        this.updated = updated;
     }
 
     public Integer getUser_id() {

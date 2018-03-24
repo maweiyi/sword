@@ -1,6 +1,7 @@
 package me.maweiyi.sword.service;
 
-import org.springframework.stereotype.Component;
+import me.maweiyi.sword.model.entity.Content;
+import java.util.List;
 
 /**
  * @author MWY
@@ -9,4 +10,6 @@ import org.springframework.stereotype.Component;
 public interface HomeService {
 
     Integer findContent();
+
+    List<Content> findRecentContent();
 }

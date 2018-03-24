@@ -106,6 +106,10 @@
             <div id="editormd">
                 <textarea style="display:none;"></textarea>
             </div>
+                <div class="col-sm-4 col-sm-offset-9">
+                    <button id="savePage" type="button" class="btn btn-w-m btn-success">保存文章</button>
+                    <button id="editPage" type="button" class="btn btn-w-m btn-warning">保存草稿</button>
+                </div>
 
 
         </div>
