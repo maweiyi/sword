@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="me.maweiyi.sword.model.dao.TagsMapper">
-
+    <insert id="insertTags" parameterType="me.maweiyi.sword.model.entity.Tags" useGeneratedKeys="true" keyProperty="id" keyColumn="id">
+        INSERT INTO tags(tag) VALUES (#{tag})
+    </insert>
 </mapper>

@@ -1,4 +1,5 @@
 $(function () {
+
     Vue.prototype.$http = axios;
     var vm = new Vue({
         el: "#wrapper",
@@ -26,5 +27,6 @@ $(function () {
             })
         }
     });
+
 
 })

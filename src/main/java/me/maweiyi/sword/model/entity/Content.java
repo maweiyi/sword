@@ -15,6 +15,24 @@ public class Content {
     private Integer user_id;
     private String content;
     private String status;
+    private String path;
+    private String tags;
+
+    public String getTags() {
+        return tags;
+    }
+
+    public void setTags(String tags) {
+        this.tags = tags;
+    }
+
+    public String getPath() {
+        return path;
+    }
+
+    public void setPath(String path) {
+        this.path = path;
+    }
 
     public Integer getId() {
         return id;

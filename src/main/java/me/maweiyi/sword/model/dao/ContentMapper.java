@@ -12,7 +12,7 @@ import java.util.List;
 @Repository
 public interface ContentMapper {
 
-    void insertContent(Content content);
+    Integer insertContent(Content content);
 
     Integer findContentAll();
 

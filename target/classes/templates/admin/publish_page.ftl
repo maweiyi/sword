@@ -93,13 +93,13 @@
             <div class="row">
                 <div class="col-sm-5">
                     <form role="form">
-                        <div class="form-group"><label>标题</label> <input type="text" placeholder="请输入文章标题" class="form-control"></div>
-                        <div class="form-group"><label>标签</label> <input type="text" placeholder="请填写文章标签" class="form-control"></div>
+                        <div class="form-group"><label>标题</label> <input type="text" placeholder="请输入文章标题" class="form-control" v-model="title"></div>
+                        <div class="form-group"><label>标签</label> <input type="text" placeholder="请填写文章标签" class="form-control" v-model="tag"></div>
                     </form>
                 </div>
                 <div class="col-sm-5">
                     <form role="form">
-                        <div class="form-group"><label>访问路径</label> <input type="text" placeholder="请填写访问路径" class="form-control"></div>
+                        <div class="form-group"><label>访问路径</label> <input type="text" placeholder="请填写访问路径" class="form-control" v-model="path"></div>
                     </form>
                 </div>
             </div>
@@ -124,6 +124,8 @@
 <script src="../js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
 <!-- Custom and plugin javascript -->
 <script src="../js/inspinia.js"></script>
+<script src="../plugins/vue.min.js"></script>
+<script src="../plugins/axios.js"></script>
 <script src="../plugins/editor/src/editormd.js"></script>
 <script src="../js/editor.js"></script>
 

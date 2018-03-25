@@ -8,5 +8,5 @@ import me.maweiyi.sword.model.entity.Content;
  */
 public interface ContentService {
 
-    void insertContent(Content content);
+    Integer insertContent(Content content);
 }

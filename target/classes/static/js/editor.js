@@ -1,4 +1,15 @@
 $(function () {
+
+    Vue.prototype.$http = axios;
+    var vm = new Vue({
+        el: "#wrapper",
+        data: {
+            title: '',
+            path: '',
+            tag: ''
+        }
+    });
+
     var editor = editormd("editormd", {
         width   : "100%",
         height  : 600,
@@ -26,5 +37,16 @@ $(function () {
 
     $("#savePage").bind('click', function () {
         console.log(editor.getMarkdown());
+        axios.post("/editpage/publish", {
+            content: editor.getMarkdown(),
+            tags: vm.tag,
+            title: vm.title,
+            path: vm.path
+        }).then(function (response) {
+
+        }).catch(function (err) {
+
+        })
     })
+
 })

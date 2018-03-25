@@ -10,14 +10,14 @@
         <result column="user_id" property="user_id" />
         <result column="updated" property="updated" />
     </resultMap>
-    <insert id="insertContent" parameterType="me.maweiyi.sword.model.entity.Content">
-        INSERT INTO content(title, user_id, content, status) VALUES
-        (#{title}, #{user_id}, #{content}, #{status})
+    <insert id="insertContent" parameterType="me.maweiyi.sword.model.entity.Content" useGeneratedKeys="true" keyProperty="id" keyColumn="id">
+        INSERT INTO content(title, user_id, content, status, path) VALUES
+        (#{title}, #{user_id}, #{content}, #{status}, #{path})
     </insert>
     <select id="findContentAll" resultType="Integer">
         SELECT COUNT(*) FROM content;
     </select>
     <select id="findRecentContent" resultMap="recentContent">
-        SELECT * FROM content LIMIT 5;
+        SELECT * FROM content ORDER BY created DESC LIMIT 5;
     </select>
 </mapper>
