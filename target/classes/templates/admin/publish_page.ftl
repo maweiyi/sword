@@ -13,6 +13,7 @@
     <link href="../css/mini.css" rel="stylesheet">
     <link href="../css/style.css" rel="stylesheet">
     <link href="../plugins/editor/css/editormd.css" rel="stylesheet">
+    <link href="../css/plugins/toastr/toastr.min.css" rel="stylesheet">
 
 </head>
 
@@ -26,7 +27,8 @@
                             <img alt="image" class="img-circle" style="height: 50px; width: 50px" src="../img/profile.jpg" />
                              </span>
                         <a data-toggle="dropdown" class="dropdown-toggle" href="#">
-                            <span class="clear"> <span class="block m-t-xs"> <strong class="font-bold">MWY</strong>
+                        <span class="clear"> <span class="block m-t-xs"> <strong class="font-bold">MWY</strong>
+                            </span></span> </a>
                             <ul class="dropdown-menu animated fadeInRight m-t-xs">
                                 <li><a href="login.html">Logout</a></li>
                             </ul>
@@ -42,7 +44,7 @@
                     <a href="/editpage/index"><i class="fa fa-pencil-square-o"></i> <span class="nav-label">发布文章</span></a>
                 </li>
                 <li>
-                    <a href="#"><i class="fa fa-diamond"></i> <span class="nav-label">文章管理</span></a>
+                    <a href="/manage/index"><i class="fa fa-diamond"></i> <span class="nav-label">文章管理</span></a>
                 </li>
                 <li>
                     <a href="mailbox.html"><i class="fa fa-file-text"></i> <span class="nav-label">页面管理</span></a>
@@ -127,6 +129,7 @@
 <script src="../plugins/vue.min.js"></script>
 <script src="../plugins/axios.js"></script>
 <script src="../plugins/editor/src/editormd.js"></script>
+<script src="../js/plugins/toastr/toastr.min.js"></script>
 <script src="../js/editor.js"></script>
 
 </body>

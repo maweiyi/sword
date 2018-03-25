@@ -36,13 +36,36 @@ $(function () {
     });
 
     $("#savePage").bind('click', function () {
-        console.log(editor.getMarkdown());
         axios.post("/editpage/publish", {
             content: editor.getMarkdown(),
             tags: vm.tag,
             title: vm.title,
-            path: vm.path
+            path: vm.path,
+            status: "post"
         }).then(function (response) {
+            console.log(response.data);
+            if (response.data.success == true) {
+                toastr.success("保存文章成功");
+            } else {
+                toastr.warning("保存文章失败");
+            }
+        }).catch(function (err) {
+
+        })
+    });
+    $("#editPage").bind('click', function () {
+        axios.post("/editpage/publish", {
+            content: editor.getMarkdown(),
+            tags: vm.tag,
+            title: vm.title,
+            path: vm.path,
+            status: "edit"
+        }).then(function (response) {
+            if (response.data.success == true) {
+                toastr.success("保存草稿成功");
+            } else {
+                toastr.warning("保存草稿失败");
+            }
 
         }).catch(function (err) {
 
