@@ -6,6 +6,8 @@ import me.maweiyi.sword.service.ContentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 /**
  * @author MWY
  * @date 3/24/18
@@ -20,5 +22,10 @@ public class ContentServiceImpl implements ContentService {
     @Override
     public Integer insertContent(Content content) {
         return contentMapper.insertContent(content);
+    }
+
+    @Override
+    public List<Content> findContentPagination(Integer currentPage, Integer row) {
+        return contentMapper.findContentPagination(currentPage, row);
     }
 }
