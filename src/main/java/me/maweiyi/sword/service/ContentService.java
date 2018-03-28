@@ -1,8 +1,10 @@
 package me.maweiyi.sword.service;
 
 import me.maweiyi.sword.model.entity.Content;
+import me.maweiyi.sword.model.entity.ContentPagination;
 
 import java.util.List;
+import java.util.Map;
 
 /**
  * @author MWY
@@ -12,5 +14,5 @@ public interface ContentService {
 
     Integer insertContent(Content content);
 
-    List<Content> findContentPagination(Integer currentPage, Integer row);
+    ContentPagination findContentPagination(Integer currentPage, Integer row);
 }

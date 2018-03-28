@@ -1,5 +1,6 @@
 package me.maweiyi.sword.model.entity;
 
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 /**
@@ -12,7 +13,7 @@ public class Content {
     private String title;
     private Date created;
     private Date updated;
-    private Integer user_id;
+    private Integer userId;
     private String content;
     private String status;
     private String path;
@@ -50,8 +51,9 @@ public class Content {
         this.title = title;
     }
 
-    public Date getCreated() {
-        return created;
+    public String getCreated() {
+        SimpleDateFormat time = new SimpleDateFormat("yyyy-MM-dd HH:mm");
+        return time.format(created);
     }
 
     public void setCreated(Date created) {
@@ -66,12 +68,12 @@ public class Content {
         this.updated = updated;
     }
 
-    public Integer getUser_id() {
-        return user_id;
+    public Integer getUserId() {
+        return userId;
     }
 
-    public void setUser_id(Integer user_id) {
-        this.user_id = user_id;
+    public void setUserId(Integer userId) {
+        this.userId = userId;
     }
 
     public String getContent() {

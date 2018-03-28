@@ -41,7 +41,7 @@ public class PublishPageController extends BaseController {
     public Map<String, Object> publishContent(@RequestBody Content content) {
         Map<String, Object> json = new HashMap<>();
         try {
-            content.setUser_id(1);
+            content.setUserId(1);
             content.setStatus("post");
             contentTagService.insertContentTag(content);
         } catch (Exception e) {

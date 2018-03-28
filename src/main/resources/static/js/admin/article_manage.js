@@ -1,5 +1,6 @@
 $(function () {
-    $('#alreadyApprovalTable').bootstrapTable({
+    $("#articleTable").bootstrapTable('destroy');
+    $('#articleTable').bootstrapTable({
         method: 'get',
         toolbar: '#toolbar', //工具按钮用哪个容器
         striped: true, //是否显示行间隔色
@@ -22,23 +23,25 @@ $(function () {
         searchOnEnterKey: true,
         columns: [{
             field: 'title',
-            title: '标题',
+            title: '文章标题',
+            width: '30%',
             align: 'center'
         }, {
             field: 'created',
             title: '创建时间',
+            width: '20%',
             align: 'center'
         }, {
             field: 'status',
             title: '状态',
+            width: '20%',
             align: 'center'
         }, {
             field: 'id',
             title: '操作',
+            width: '30%',
             align: 'center'
         }]
 
-    }).bootstrapTable("refresh", {
-        url: '/manage/search'
     });
 });

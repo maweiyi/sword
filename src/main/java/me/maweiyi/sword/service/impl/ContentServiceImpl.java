@@ -2,11 +2,14 @@ package me.maweiyi.sword.service.impl;
 
 import me.maweiyi.sword.model.dao.ContentMapper;
 import me.maweiyi.sword.model.entity.Content;
+import me.maweiyi.sword.model.entity.ContentPagination;
 import me.maweiyi.sword.service.ContentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  * @author MWY
@@ -25,7 +28,12 @@ public class ContentServiceImpl implements ContentService {
     }
 
     @Override
-    public List<Content> findContentPagination(Integer currentPage, Integer row) {
-        return contentMapper.findContentPagination(currentPage, row);
+    public ContentPagination findContentPagination(Integer currentPage, Integer row) {
+        ContentPagination contentPagination = new ContentPagination();
+        contentPagination.setTotal(contentMapper.findContentAll());
+        contentPagination.setRows(contentMapper.findContentPagination(currentPage, row));
+        //return contentMapper.findContentPagination(currentPage, row);
+        return contentPagination;
+
     }
 }

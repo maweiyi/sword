@@ -109,7 +109,7 @@
 <script src="../js/inspinia.js"></script>
 <script src="../plugins/vue.min.js"></script>
 <script src="../plugins/axios.js"></script>
-<script src="../plugins/bootstrap-table.js"></script>
+<script src="../plugins/table/bootstrap-table.js"></script>
 <script src="../js/admin/article_manage.js"></script>
 
 </body>

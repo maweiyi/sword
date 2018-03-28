@@ -7,7 +7,7 @@
         <result column="id" property="id" />
         <result column="status" property="status" />
         <result column="title" property="title" />
-        <result column="user_id" property="user_id" />
+        <result column="user_id" property="userId" />
         <result column="updated" property="updated" />
     </resultMap>
     <insert id="insertContent" parameterType="me.maweiyi.sword.model.entity.Content" useGeneratedKeys="true" keyProperty="id" keyColumn="id">
@@ -19,5 +19,8 @@
     </select>
     <select id="findRecentContent" resultMap="recentContent">
         SELECT * FROM content ORDER BY created DESC LIMIT 5;
+    </select>
+    <select id="findContentPagination" resultMap="recentContent">
+        SELECT * FROM content ORDER BY created DESC LIMIT #{arg0}, #{arg1};
     </select>
 </mapper>
