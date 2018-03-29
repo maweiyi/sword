@@ -1,5 +1,5 @@
 $(function () {
-    $("#articleTable").bootstrapTable('destroy');
+    //$("#articleTable").bootstrapTable('destroy');
     $('#articleTable').bootstrapTable({
         method: 'get',
         toolbar: '#toolbar', //工具按钮用哪个容器
@@ -35,12 +35,27 @@ $(function () {
             field: 'status',
             title: '状态',
             width: '20%',
-            align: 'center'
+            align: 'center',
+            formatter: function (value, row, index) {
+                if (value == "post") {
+                    return '<span class="label label-info">发布</span>'
+                } else {
+                    return '<span class="label label-warning">草稿</span>'
+                }
+            }
         }, {
             field: 'id',
             title: '操作',
-            width: '30%',
-            align: 'center'
+            width: '40%',
+            align: 'center',
+            formatter: function (value, row, index) {
+                return [
+                    '<a class="btn btn-primary btn-xs" style="margin-right: 3px">编辑</a>',
+                    '<a class="btn btn-warning btn-xs" style="margin-right: 3px">删除</a>',
+                    '<a class="btn btn-info btn-xs">预览</a>'
+
+                ].join('');
+            }
         }]
 
     });

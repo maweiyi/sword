@@ -36,13 +36,13 @@
                         Blog
                     </div>
                 </li>
-                <li class="active">
+                <li>
                     <a href="/admin/home"><i class="fa fa-dashboard"></i> <span class="nav-label">仪表盘</span></a>
                 </li>
                 <li>
                     <a href="/editpage/index"><i class="fa fa-pencil-square-o"></i> <span class="nav-label">发布文章</span></a>
                 </li>
-                <li>
+                <li class="active">
                     <a href="/manage/index"><i class="fa fa-diamond"></i> <span class="nav-label">文章管理</span></a>
                 </li>
                 <li>
@@ -109,7 +109,8 @@
 <script src="../js/inspinia.js"></script>
 <script src="../plugins/vue.min.js"></script>
 <script src="../plugins/axios.js"></script>
-<script src="../plugins/table/bootstrap-table.js"></script>
+<!--script src="../plugins/table/bootstrap-table.js"></script-->
+<script src="../plugins/bootstrap-table/bootstrap-table.min.js"></script>
 <script src="../js/admin/article_manage.js"></script>
 
 </body>
