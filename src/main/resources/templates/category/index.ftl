@@ -2,47 +2,13 @@
 
 
   <html class="light page-category">
-
-
   <head>
-      <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="utf-8">
-
-      <title>category | forsigner的博客</title>
-
+      <meta charset="utf-8">
+      <title>category | MWY的博客</title>
       <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-
-      <meta name="keywords" content="forsigner,前端,设计,Hexo主题,前端开发,用户体验,设计,frontend,design,nodejs,JavaScript" />
-
-
-      <meta name="description" content="forsigner, 前端开发, 用户体验, 设计, frontend, design, nodejs">
-      <meta property="og:type" content="website">
-      <meta property="og:title" content="category">
-      <meta property="og:url" content="http://www.forsigner.com/category/index.html">
-      <meta property="og:site_name" content="forsigner的博客">
-      <meta property="og:description" content="forsigner, 前端开发, 用户体验, 设计, frontend, design, nodejs">
-      <meta property="og:locale" content="zh-CN">
-      <meta property="og:updated_time" content="2016-05-17T09:53:44.000Z">
-      <meta name="twitter:card" content="summary">
-      <meta name="twitter:title" content="category">
-      <meta name="twitter:description" content="forsigner, 前端开发, 用户体验, 设计, frontend, design, nodejs">
-
-
-
-
       <link rel="icon" href="../favicon.ico">
-
-
       <link href="../css/styles-v=c114cbe6.css" rel="stylesheet">
-
-
-
       <link rel="stylesheet" href="../css/personal-style.css">
-
-
-
-
-
       <script type="text/javascript">
           var _hmt = _hmt || [];
           (function() {
@@ -52,9 +18,6 @@
               s.parentNode.insertBefore(hm, s);
           })();
       </script>
-
-
-
       <script type="text/javascript">
           (function(){
               var bp = document.createElement('script');
@@ -69,38 +32,19 @@
               s.parentNode.insertBefore(bp, s);
           })();
       </script>
-
-
-
-
       <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-
-
-
-      <link rel="stylesheet" href="http://cdn.bootcss.com/font-awesome/4.3.0/css/font-awesome.min.css"><!-- hexo-inject:begin --><!-- hexo-inject:end -->
-
+      <link rel="stylesheet" href="http://cdn.bootcss.com/font-awesome/4.3.0/css/font-awesome.min.css">
   </head>
-
   <body>
-
-
-
-  <!-- hexo-inject:begin --><!-- hexo-inject:end --><span id="toolbox-mobile" class="toolbox-mobile">盒子</span>
-
-
+  <span id="toolbox-mobile" class="toolbox-mobile">盒子</span>
   <div class="content content-category">
       <div class="page-header">
-
-
           <div class="breadcrumb">
               <div class="location">分类</div>
               <i class="icon-location"></i>
           </div>
-
-
-
           <div class="toolbox">
-              <a class="toolbox-entry" href="../index.html">
+              <a class="toolbox-entry" href="/">
                   <span class="toolbox-entry-text">盒子</span>
                   <i class="icon-angle-down"></i>
                   <i class="icon-home"></i>

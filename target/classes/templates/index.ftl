@@ -79,7 +79,7 @@
           <img src="img/avatar.jpg" alt="" />
       </a>
       <h1 class="name" style="font-family: calligraffittiregular">
-          Forsigner
+          MWY
       </h1>
       <div class="slogan">
           Find the bug of the world
@@ -91,14 +91,14 @@
 
           <li class="item">
 
-              <a href="archives/index.html">Blog</a>
+              <a href="archives/index">Blog</a>
 
               <span>|</span>
           </li>
 
           <li class="item">
 
-              <a href="project/index.html" rel="noopener noreferrer" target="_blank">Project</a>
+              <a href="project/index" rel="noopener noreferrer" target="_blank">Project</a>
 
               <span>|</span>
           </li>
@@ -120,105 +120,6 @@
       </ul>
 
   </div>
-
-
-  <div class="modal" id="modal">
-      <span id="cover" class="cover hide"></span>
-      <div id="modal-dialog" class="modal-dialog hide-dialog">
-          <div class="modal-header">
-              <span id="close" class="btn-close">关闭</span>
-          </div>
-          <hr>
-          <div class="modal-body">
-              <ul class="list-toolbox">
-
-                  <li class="item-toolbox">
-                      <a
-                              class="CIRCLE"
-                              href="archives/index.html"
-                              rel="noopener noreferrer"
-                              target="_self"
-                      >
-                          博客
-                      </a>
-                  </li>
-
-                  <li class="item-toolbox">
-                      <a
-                              class="CIRCLE"
-                              href="category/index.html"
-                              rel="noopener noreferrer"
-                              target="_self"
-                      >
-                          分类
-                      </a>
-                  </li>
-
-                  <li class="item-toolbox">
-                      <a
-                              class="CIRCLE"
-                              href="tag/index.html"
-                              rel="noopener noreferrer"
-                              target="_self"
-                      >
-                          标签
-                      </a>
-                  </li>
-
-                  <li class="item-toolbox">
-                      <a
-                              class="CIRCLE"
-                              href="link/index.html"
-                              rel="noopener noreferrer"
-                              target="_self"
-                      >
-                          友链
-                      </a>
-                  </li>
-
-                  <li class="item-toolbox">
-                      <a
-                              class="CIRCLE"
-                              href="about/index.html"
-                              rel="noopener noreferrer"
-                              target="_self"
-                      >
-                          关于
-                      </a>
-                  </li>
-
-                  <li class="item-toolbox">
-                      <a
-                              class="CIRCLE"
-                              href="atom.xml"
-                              rel="noopener noreferrer"
-                              target="_blank"
-                      >
-                          RSS
-                      </a>
-                  </li>
-
-                  <li class="item-toolbox">
-                      <a
-                              class="CIRCLE"
-                              href="search/index.html"
-                              rel="noopener noreferrer"
-                              target="_self"
-                      >
-                          搜索
-                      </a>
-                  </li>
-
-              </ul>
-
-          </div>
-      </div>
-  </div>
-
-
-
-
-
   <script type="text/javascript">
       function loadScript(url, callback) {
           var script = document.createElement('script')

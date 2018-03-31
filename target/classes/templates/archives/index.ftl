@@ -1,47 +1,12 @@
 <!DOCTYPE html>
-
-
   <html class="light page-archives">
-
-
   <head>
-      <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="utf-8">
-
+      <meta charset="utf-8">
       <title>Archives | forsigner的博客</title>
-
       <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-
-      <meta name="keywords" content="forsigner,前端,设计,Hexo主题,前端开发,用户体验,设计,frontend,design,nodejs,JavaScript" />
-
-
-      <meta name="description" content="forsigner, 前端开发, 用户体验, 设计, frontend, design, nodejs">
-      <meta property="og:type" content="website">
-      <meta property="og:title" content="forsigner的博客">
-      <meta property="og:url" content="http://www.forsigner.com/archives/index.html">
-      <meta property="og:site_name" content="forsigner的博客">
-      <meta property="og:description" content="forsigner, 前端开发, 用户体验, 设计, frontend, design, nodejs">
-      <meta property="og:locale" content="zh-CN">
-      <meta name="twitter:card" content="summary">
-      <meta name="twitter:title" content="forsigner的博客">
-      <meta name="twitter:description" content="forsigner, 前端开发, 用户体验, 设计, frontend, design, nodejs">
-
-
-
-
       <link rel="icon" href="../favicon.ico">
-
-
       <link href="../css/styles-v=c114cbe6.css" rel="stylesheet">
-
-
-
       <link rel="stylesheet" href="../css/personal-style.css">
-
-
-
-
-
       <script type="text/javascript">
           var _hmt = _hmt || [];
           (function() {
@@ -51,9 +16,6 @@
               s.parentNode.insertBefore(hm, s);
           })();
       </script>
-
-
-
       <script type="text/javascript">
           (function(){
               var bp = document.createElement('script');
@@ -68,38 +30,19 @@
               s.parentNode.insertBefore(bp, s);
           })();
       </script>
-
-
-
-
       <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-
-
-
-      <link rel="stylesheet" href="http://cdn.bootcss.com/font-awesome/4.3.0/css/font-awesome.min.css"><!-- hexo-inject:begin --><!-- hexo-inject:end -->
-
+      <link rel="stylesheet" href="http://cdn.bootcss.com/font-awesome/4.3.0/css/font-awesome.min.css">
   </head>
-
   <body>
-
-
-
-  <!-- hexo-inject:begin --><!-- hexo-inject:end --><span id="toolbox-mobile" class="toolbox-mobile">盒子</span>
-
-
-  <div class="content content-archive">
+  <span id="toolbox-mobile" class="toolbox-mobile">盒子</span>
+  <div class="content content-archive" id="archives">
       <div class="page-header">
-
-
           <div class="breadcrumb">
               <div class="location">博客</div>
               <i class="icon-location"></i>
           </div>
-
-
-
           <div class="toolbox">
-              <a class="toolbox-entry" href="../index.html">
+              <a class="toolbox-entry" href="/">
                   <span class="toolbox-entry-text">盒子</span>
                   <i class="icon-angle-down"></i>
                   <i class="icon-home"></i>
@@ -189,12 +132,12 @@
 
 
           <div class="box-blog-info">
-              <a class="avatar" href="../index.html">
-                  <img src="../images/avatar.jpg" alt="" />
+              <a class="avatar" href="/">
+                  <img src="../img/avatar.jpg" alt="" />
               </a>
               <div class="info">
                   <h3 class="name" style="font-family: calligraffittiregular">
-                      Forsigner
+                      MWY
                   </h3>
                   <div class="slogan">
                       Find the bug of the world
@@ -206,13 +149,8 @@
 
 
       <div class="post-list-box archive-body">
-          <ul class="list-post">  <li class="item-year item item-title item-title-1">
-              <a href="2016/index.html" class="text-year">
-                  2016
-                  <i class="icon-hou"></i>
+          <ul class="list-post">
 
-              </a>
-          </li>
               <li class="item-post item">
                   <span class="post-date">03-13</span>
 
@@ -398,120 +336,11 @@
       </div>
 
       <div class="archive-footer">
-
-          <div class="pagination">
-              <nav class="page-nav">
-                  <span class="page-number current">1</span><a class="page-number" href="page/2/index.html">2</a><a class="extend next" rel="next" href="page/2/index.html"><i class="icon-angle-right"></i></a>
-              </nav>
-          </div>
-
-
-      </div>
-  </div>
-
-
-
-
-
-
-
-  <div class="modal" id="modal">
-      <span id="cover" class="cover hide"></span>
-      <div id="modal-dialog" class="modal-dialog hide-dialog">
-          <div class="modal-header">
-              <span id="close" class="btn-close">关闭</span>
-          </div>
-          <hr>
-          <div class="modal-body">
-              <ul class="list-toolbox">
-
-                  <li class="item-toolbox">
-                      <a
-                              class="CIRCLE"
-                              href="index.html"
-                              rel="noopener noreferrer"
-                              target="_self"
-                      >
-                          博客
-                      </a>
-                  </li>
-
-                  <li class="item-toolbox">
-                      <a
-                              class="CIRCLE"
-                              href="../category/index.html"
-                              rel="noopener noreferrer"
-                              target="_self"
-                      >
-                          分类
-                      </a>
-                  </li>
-
-                  <li class="item-toolbox">
-                      <a
-                              class="CIRCLE"
-                              href="../tag/index.html"
-                              rel="noopener noreferrer"
-                              target="_self"
-                      >
-                          标签
-                      </a>
-                  </li>
-
-                  <li class="item-toolbox">
-                      <a
-                              class="CIRCLE"
-                              href="../link/index.html"
-                              rel="noopener noreferrer"
-                              target="_self"
-                      >
-                          友链
-                      </a>
-                  </li>
-
-                  <li class="item-toolbox">
-                      <a
-                              class="CIRCLE"
-                              href="../about/index.html"
-                              rel="noopener noreferrer"
-                              target="_self"
-                      >
-                          关于
-                      </a>
-                  </li>
-
-                  <li class="item-toolbox">
-                      <a
-                              class="CIRCLE"
-                              href="../atom.xml"
-                              rel="noopener noreferrer"
-                              target="_blank"
-                      >
-                          RSS
-                      </a>
-                  </li>
-
-                  <li class="item-toolbox">
-                      <a
-                              class="CIRCLE"
-                              href="../search/index.html"
-                              rel="noopener noreferrer"
-                              target="_self"
-                      >
-                          搜索
-                      </a>
-                  </li>
-
-              </ul>
-
+          <div id="paginator" class="pagination">
           </div>
       </div>
+
   </div>
-
-
-
-
-
   <script type="text/javascript">
       function loadScript(url, callback) {
           var script = document.createElement('script')
@@ -556,6 +385,12 @@
             all[i].SourceElement().parentNode.className += ' has-jax';
     });
 </script>
-  <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+  <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  <script src="../plugins/moment.js"></script>
+  <script src="../plugins/vue.min.js"></script>
+  <script src="../plugins/axios.js"></script>
+  <script src="../js/jquery-2.1.1.js"></script>
+  <script src="../plugins/paginator/paginator.js"></script>
+  <script src="../js/frontend/archives.js"></script>
   </body>
   </html>
