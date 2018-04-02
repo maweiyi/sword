@@ -371,7 +371,7 @@
       }
   </script>
 
-  <script type="text/x-mathjax-config">
+  <!--script type="text/x-mathjax-config">
     MathJax.Hub.Config({
         tex2jax: {
             inlineMath: [ ["$","$"], ["\\(","\\)"] ],
@@ -384,8 +384,8 @@
         for (var i = 0; i < all.length; ++i)
             all[i].SourceElement().parentNode.className += ' has-jax';
     });
-</script>
-  <script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</script-->
+  <!--script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script-->
   <script src="../plugins/moment.js"></script>
   <script src="../plugins/vue.min.js"></script>
   <script src="../plugins/axios.js"></script>

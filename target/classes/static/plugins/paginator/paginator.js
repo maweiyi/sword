@@ -15,6 +15,11 @@ var paginator = {
         return this.hrefFormer + n + this.hrefLatter;
     },
 
+    selectPage : function(n){
+        this._config['pno'] = n;
+        this.generPageHtml(this._config,true);
+    },
+
     //生成控件代码
     generPageHtml : function(config,enforceInit){
         if(enforceInit || !this.inited){
@@ -119,6 +124,7 @@ var paginator = {
         this.hrefFormer = config.hrefFormer || '';
         this.hrefLatter = config.hrefLatter || '';
         if(config.getLink && typeof(config.getLink) == 'function'){this.getLink = config.getLink;}
+        if(config.click && typeof(config.click) == 'function'){this.click = config.click;}
         if(config.getHref && typeof(config.getHref) == 'function'){this.getHref = config.getHref;}
         if(!this._config){
             this._config = config;
@@ -136,16 +142,21 @@ var paginator = {
     },
     _getHandlerStr : function(n){
         if(this.mode == 'click'){
-            return 'href="'+this.getHref(n)+'" onclick="return kkpager._clickHandler('+n+')"';
+            return 'href="'+this.getHref(n)+'" onclick="return paginator._clickHandler('+n+')"';
         }
         //link模式，也是默认的
         return 'href="'+this.getLink(n)+'"';
     },
     _clickHandler	: function(n){
+        console.log("XXXXX")
         var res = false;
+        console.log(this.click);
+        console.log(typeof this.click == 'function');
         if(this.click && typeof this.click == 'function'){
+            console.log("AAAAAAA");
             res = this.click.call(this,n) || false;
         }
+        console.log("XXXXX---->", res);
         return res;
     }
 };
