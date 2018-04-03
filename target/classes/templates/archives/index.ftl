@@ -28,7 +28,7 @@
                   <li class="item-toolbox">
                       <a
                               class="CIRCLE"
-                              href="index.html"
+                              href="/archives/index"
                               rel="noopener noreferrer"
                               target="_self"
                       >
@@ -46,62 +46,6 @@
                           分类
                       </a>
                   </li>
-
-                  <li class="item-toolbox">
-                      <a
-                              class="CIRCLE"
-                              href="../tag/index.html"
-                              rel="noopener noreferrer"
-                              target="_self"
-                      >
-                          标签
-                      </a>
-                  </li>
-
-                  <li class="item-toolbox">
-                      <a
-                              class="CIRCLE"
-                              href="../link/index.html"
-                              rel="noopener noreferrer"
-                              target="_self"
-                      >
-                          友链
-                      </a>
-                  </li>
-
-                  <li class="item-toolbox">
-                      <a
-                              class="CIRCLE"
-                              href="../about/index.html"
-                              rel="noopener noreferrer"
-                              target="_self"
-                      >
-                          关于
-                      </a>
-                  </li>
-
-                  <li class="item-toolbox">
-                      <a
-                              class="CIRCLE"
-                              href="../atom.xml"
-                              rel="noopener noreferrer"
-                              target="_blank"
-                      >
-                          RSS
-                      </a>
-                  </li>
-
-                  <li class="item-toolbox">
-                      <a
-                              class="CIRCLE"
-                              href="../search/index.html"
-                              rel="noopener noreferrer"
-                              target="_self"
-                      >
-                          搜索
-                      </a>
-                  </li>
-
               </ul>
           </div>
           <div class="box-blog-info">
@@ -123,7 +67,7 @@
           <ul class="list-post">
               <li class="item-post item" v-for="item in article.rows">
                   <span class="post-date">{{item.created}}</span>
-                  <a class="post-title">{{item.title}}</a>
+                  <a class="post-title" v-bind:href="'/content/index?id=' + item.id">{{item.title}}</a>
               </li>
           </ul>
       </div>

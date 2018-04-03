@@ -15,4 +15,6 @@ public interface ContentService {
     Integer insertContent(Content content);
 
     ContentPagination findContentPagination(Integer currentPage, Integer row);
+
+    Content findContentById(Integer id);
 }

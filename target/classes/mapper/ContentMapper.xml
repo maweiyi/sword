@@ -23,4 +23,7 @@
     <select id="findContentPagination" resultMap="recentContent">
         SELECT * FROM content ORDER BY created DESC LIMIT #{arg0}, #{arg1};
     </select>
+    <select id="findContentById" parameterType="Integer" resultMap="recentContent">
+        SELECT * FROM content WHERE id=#{id};
+    </select>
 </mapper>

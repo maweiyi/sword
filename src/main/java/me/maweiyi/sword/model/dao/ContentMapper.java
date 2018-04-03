@@ -20,5 +20,7 @@ public interface ContentMapper {
 
     List<Content> findContentPagination(Integer currentPage, Integer row);
 
+    Content findContentById(Integer id);
+
 
 }

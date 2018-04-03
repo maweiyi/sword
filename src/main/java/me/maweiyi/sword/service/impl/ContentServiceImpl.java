@@ -36,4 +36,9 @@ public class ContentServiceImpl implements ContentService {
         return contentPagination;
 
     }
+
+    @Override
+    public Content findContentById(Integer id) {
+        return contentMapper.findContentById(id);
+    }
 }
