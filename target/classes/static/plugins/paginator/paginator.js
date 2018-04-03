@@ -148,15 +148,10 @@ var paginator = {
         return 'href="'+this.getLink(n)+'"';
     },
     _clickHandler	: function(n){
-        console.log("XXXXX")
         var res = false;
-        console.log(this.click);
-        console.log(typeof this.click == 'function');
         if(this.click && typeof this.click == 'function'){
-            console.log("AAAAAAA");
             res = this.click.call(this,n) || false;
         }
-        console.log("XXXXX---->", res);
         return res;
     }
 };

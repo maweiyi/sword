@@ -30,7 +30,9 @@ $(function () {
                     click: function (n) {
                         axios.get("/manage/search", {params: {pageSize: 10, pageNumber: n}}).then(function(response) {
                             vm.article = response.data;
-                            console.log("GGGGG");
+                            for (var i = 0; i < vm.article.rows.length; i++) {
+                                vm.article.rows[i].created = moment(vm.article.rows[i].created).format("YYYY-MM-DD")
+                            }
                             paginator.selectPage(n)
                         });
 
