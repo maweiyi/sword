@@ -1,8 +1,7 @@
-$(function () {
 
     Vue.prototype.$http = axios;
     var vm = new Vue({
-        el: "#wrapper",
+        el: "#wrappers",
         data: {
             staticArticle: 0,
             recentContent: '',
@@ -26,7 +25,4 @@ $(function () {
                 
             })
         }
-    });
-
-
-})
+    })

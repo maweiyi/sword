@@ -15,7 +15,7 @@
     <div class="post-header CENTER">
 
         <div class="toolbox">
-            <a class="toolbox-entry" href="../../../../index.html">
+            <a class="toolbox-entry" href="/">
                 <span class="toolbox-entry-text">盒子</span>
                 <i class="icon-angle-down"></i>
                 <i class="icon-home"></i>
@@ -25,22 +25,11 @@
                 <li class="item-toolbox">
                     <a
                             class="CIRCLE"
-                            href="../../../../archives/index.html"
+                            href="/archives/index"
                             rel="noopener noreferrer"
                             target="_self"
                     >
                         博客
-                    </a>
-                </li>
-
-                <li class="item-toolbox">
-                    <a
-                            class="CIRCLE"
-                            href="../../../../category/index.html"
-                            rel="noopener noreferrer"
-                            target="_self"
-                    >
-                        分类
                     </a>
                 </li>
             </ul>

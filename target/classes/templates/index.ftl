@@ -95,14 +95,6 @@
 
               <span>|</span>
           </li>
-
-          <li class="item">
-
-              <a href="project/index" rel="noopener noreferrer" target="_blank">Project</a>
-
-              <span>|</span>
-          </li>
-
           <li class="item">
 
               <a href="https://github.com/forsigner" rel="noopener noreferrer" target="_blank">Github</a>

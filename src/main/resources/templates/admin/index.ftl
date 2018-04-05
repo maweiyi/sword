@@ -12,11 +12,12 @@
     <link href="../css/animate.css" rel="stylesheet">
     <link href="../css/mini.css" rel="stylesheet">
     <link href="../css/style.css" rel="stylesheet">
+    <link href="../plugins/table/bootstrap-table.css" rel="stylesheet">
 
 </head>
 
 <body>
-    <div id="wrapper">
+    <div id="wrappers">
         <nav class="navbar-default navbar-static-side" role="navigation">
             <div class="sidebar-collapse">
                 <ul class="nav metismenu" id="side-menu">
@@ -25,7 +26,7 @@
                             <img alt="image" class="img-circle" style="height: 50px; width: 50px" src="../img/profile.jpg" />
                              </span>
                             <a data-toggle="dropdown" class="dropdown-toggle" href="#">
-                                <span class="clear"> <span class="block m-t-xs"> <strong class="font-bold">MWY</strong>
+                            <span class="clear"> <span class="block m-t-xs"> <strong class="font-bold">MWY</strong>
                             </span></span> </a>
                             <ul class="dropdown-menu animated fadeInRight m-t-xs">
                                 <li><a href="login.html">Logout</a></li>
@@ -51,7 +52,7 @@
                         <a href="metrics.html"><i class="fa fa-cloud-upload"></i> <span class="nav-label">文件管理</span>  </a>
                     </li>
                     <li>
-                        <a href="#"><i class="fa fa-cubes"></i> <span class="nav-label">其它管理</span><span class="fa arrow"></span></a>
+                        <a><i class="fa fa-cubes"></i> <span class="nav-label">其它管理</span><span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level collapse">
                             <li><a href="form_basic.html">评论管理</a></li>
                             <li><a href="form_advanced.html">分类/标签</a></li>
@@ -186,8 +187,6 @@
         </div>
 
     </div>
-
-    <!-- Mainly scripts -->
     <script src="../js/jquery-2.1.1.js"></script>
     <script src="../js/bootstrap.min.js"></script>
     <script src="../js/plugins/metisMenu/jquery.metisMenu.js"></script>
@@ -196,6 +195,8 @@
     <script src="../js/inspinia.js"></script>
     <script src="../plugins/vue.min.js"></script>
     <script src="../plugins/axios.js"></script>
+    <!--script src="../plugins/table/bootstrap-table.js"></script-->
+    <script src="../plugins/bootstrap-table/bootstrap-table.min.js"></script>
     <script src="../js/admin/index.js"></script>
 
 </body>

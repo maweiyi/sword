@@ -35,17 +35,6 @@
                           博客
                       </a>
                   </li>
-
-                  <li class="item-toolbox">
-                      <a
-                              class="CIRCLE"
-                              href="../category/index.html"
-                              rel="noopener noreferrer"
-                              target="_self"
-                      >
-                          分类
-                      </a>
-                  </li>
               </ul>
           </div>
           <div class="box-blog-info">

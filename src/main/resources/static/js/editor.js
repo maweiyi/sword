@@ -1,4 +1,3 @@
-$(function () {
 
     Vue.prototype.$http = axios;
     var vm = new Vue({
@@ -72,4 +71,3 @@ $(function () {
         })
     })
 
-})
