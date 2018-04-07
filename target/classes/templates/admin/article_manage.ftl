@@ -112,6 +112,10 @@
 <!--script src="../plugins/table/bootstrap-table.js"></script-->
 <script src="../plugins/bootstrap-table/bootstrap-table.min.js"></script>
 <script src="../js/admin/article_manage.js"></script>
-
+<script>
+    function editPages(value) {
+        console.log("AAAAA", value);
+    }
+</script>
 </body>
 </html>

@@ -50,13 +50,16 @@ $(function () {
             align: 'center',
             formatter: function (value, row, index) {
                 return [
-                    '<a class="btn btn-primary btn-xs" style="margin-right: 3px">编辑</a>',
-                    '<a class="btn btn-warning btn-xs" style="margin-right: 3px">删除</a>',
-                    '<a class="btn btn-info btn-xs">预览</a>'
+                    "<a href=" + "/editpage/index?id=" + value + ' class="btn btn-primary btn-xs" style="margin-right: 3px">编辑</a>',
+                    '<button  class="btn btn-warning btn-xs" style="margin-right: 3px">删除</button>',
+                    '<button class="btn btn-info btn-xs">预览</button>'
 
                 ].join('');
             }
         }]
 
     });
+
+
 });
+

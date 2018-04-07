@@ -1,6 +1,7 @@
 package me.maweiyi.sword.service;
 
 import me.maweiyi.sword.model.entity.Content;
+import me.maweiyi.sword.model.entity.ContentTag;
 import me.maweiyi.sword.model.entity.Tags;
 
 /**
@@ -10,4 +11,7 @@ import me.maweiyi.sword.model.entity.Tags;
 public interface ContentTagService {
 
     void insertContentTag(Content content);
+
+    String findTagById(Integer id);
+
 }

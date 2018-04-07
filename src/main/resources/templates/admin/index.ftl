@@ -107,20 +107,6 @@
                         </div>
                     </div>
                     <div class="col-sm-6 col-lg-3">
-                        <div class="widget style1 yellow-bg">
-                            <div class="row">
-                                <div class="col-xs-4">
-                                    <span class="mini-stat-icon"><i class="fa fa-comments-o" aria-hidden="true"></i></span>
-                                </div>
-                                <div class="col-xs-8 text-right">
-                                    <span> 收到了 </span>
-                                    <h2 class="font-bold">12</h2>
-                                    <span>条留言</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-lg-3">
                         <div class="widget style1 lazur-bg">
                             <div class="row">
                                 <div class="col-xs-4">

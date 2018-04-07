@@ -11,4 +11,8 @@ import org.springframework.stereotype.Repository;
 public interface ContentTagMapper {
 
     void insertContentTag(ContentTag contentTag);
+
+    Integer findTagById(Integer id);
+
+    String findTagNameById(Integer id);
 }

@@ -31,6 +31,7 @@ public class ContentTagServiceImpl implements ContentTagService {
     private ContentTagMapper contentTagMapper;
 
 
+
     @Override
     @Transactional(rollbackFor = Exception.class)
     public void insertContentTag(Content content) {
@@ -44,5 +45,12 @@ public class ContentTagServiceImpl implements ContentTagService {
          contentTag.setContent_id(content.getId());
          contentTag.setTag_id(tags.getId());
          contentTagMapper.insertContentTag(contentTag);
+    }
+
+    @Override
+    public String findTagById(Integer id) {
+        Integer tadId = contentTagMapper.findTagById(id);
+        String tag = contentTagMapper.findTagNameById(tadId);
+        return tag;
     }
 }

@@ -4,4 +4,10 @@
     <insert id="insertContentTag" parameterType="me.maweiyi.sword.model.entity.ContentTag">
         INSERT INTO content_tag(tag_id, content_id) VALUES (#{tag_id}, #{content_id})
     </insert>
+    <select id="findTagById" parameterType="Integer" resultType="Integer">
+        SELECT tag_id FROM content_tag WHERE content_id = #{id}
+    </select>
+    <select id="findTagNameById" parameterType="Integer" resultType="String">
+        SELECT tag FROM tags WHERE id= #{id}
+    </select>
 </mapper>
