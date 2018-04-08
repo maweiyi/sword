@@ -19,7 +19,7 @@
 
 <body>
 <div id="wrapper">
-    <input type="text" value="${id}" hidden>
+    <input type="text" id="id" value="${id}" hidden>
     <nav class="navbar-default navbar-static-side" role="navigation">
         <div class="sidebar-collapse">
             <ul class="nav metismenu" id="side-menu">
@@ -107,7 +107,7 @@
                 </div>
             </div>
             <div id="editormd">
-                <textarea style="display:none;"></textarea>
+                <textarea style="display:none;" v-model="content"></textarea>
             </div>
                 <div class="col-sm-4 col-sm-offset-9">
                     <button id="savePage" type="button" class="btn btn-w-m btn-success">保存文章</button>

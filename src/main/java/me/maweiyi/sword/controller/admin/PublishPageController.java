@@ -39,25 +39,16 @@ public class PublishPageController extends BaseController {
     @RequestMapping("/index")
     public ModelAndView index(Integer id) {
         ModelAndView mv = new ModelAndView();
-        mv.addObject("id", id);
         mv.setViewName(INDEX);
-        return mv;
 
-        /*if (id == null) {
-            mv.addObject("title", null);
-            mv.addObject("path", null);
-            mv.addObject("tag", null);
-            mv.addObject("content", null);
+        if (id == null) {
+            mv.addObject("id", -1);
             return mv;
 
         } else {
-            Content content = contentService.findContentById(id);
-            mv.addObject("title", content.getTitle());
-            mv.addObject("path", content.getPath());
-            mv.addObject("tag", contentTagService.findTagById(id));
-            mv.addObject("content", content.getContent());
+            mv.addObject("id", id);
             return mv;
-        }*/
+        }
 
     }
 

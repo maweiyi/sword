@@ -1,15 +1,27 @@
-
-    Vue.prototype.$http = axios;
-    var vm = new Vue({
-        el: "#wrapper",
-        data: {
-            title: '',
-            path: '',
-            tag: ''
+Vue.prototype.$http = axios;
+var vm = new Vue({
+    el: "#wrapper",
+    data: {
+        title: '',
+        path: '',
+        tag: '',
+        content: ''
+    },
+    created: function () {
+        if ($('#id').val() != -1) {
+            this.$http.get('/editpage/content', {params: {id: $('#id').val()}}).then(function (response) {
+                console.log(response.data);
+                vm.title = response.data.entity.content.title;
+                vm.path = response.data.entity.content.path;
+                vm.tag = response.data.entity.tag;
+                vm.content = response.data.entity.content.content;
+                //editor.setMarkdown(response.data.entity.content.content);
+            })
         }
-    });
+    }
+});
 
-    var editor = editormd("editormd", {
+var editor = editormd("editormd", {
         width   : "100%",
         height  : 600,
         syncScrolling : "single",
@@ -33,6 +45,7 @@
             ]
         }
     });
+editor.setMarkdown(vm.content);
 
     $("#savePage").bind('click', function () {
         axios.post("/editpage/publish", {
@@ -42,7 +55,6 @@
             path: vm.path,
             status: "post"
         }).then(function (response) {
-            console.log(response.data);
             if (response.data.success == true) {
                 toastr.success("保存文章成功");
             } else {
@@ -70,4 +82,6 @@
 
         })
     })
+
+
 
