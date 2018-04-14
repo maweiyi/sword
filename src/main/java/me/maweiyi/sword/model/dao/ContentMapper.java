@@ -22,4 +22,6 @@ public interface ContentMapper {
 
     Content findContentById(Integer id);
 
+    void updateContent(Content content);
+
 }

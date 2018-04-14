@@ -12,4 +12,6 @@ import org.springframework.stereotype.Repository;
 public interface TagsMapper {
 
     Integer insertTags(Tags tags);
+
+    void updateTag(String tag);
 }

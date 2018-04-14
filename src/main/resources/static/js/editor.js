@@ -45,7 +45,7 @@ var editor = editormd("editormd", {
             ]
         }
     });
-editor.setMarkdown(vm.content);
+//editor.setMarkdown(vm.content);
 
     $("#savePage").bind('click', function () {
         axios.post("/editpage/publish", {
@@ -81,7 +81,35 @@ editor.setMarkdown(vm.content);
         }).catch(function (err) {
 
         })
-    })
+    });
+    $("#updateSavePage").bind('click', function () {
+        axios.post("/editpage/update", {
+            content: editor.getMarkdown(),
+            tags: vm.tag,
+            title: vm.title,
+            path: vm.path
+        }).then(function (response) {
+            if (response.data.success == true) {
+                toastr.success("更新文章成功")
+            } else {
+                toastr.warning("保存草稿失败")
+            }
+        })
+    });
+    $("#updateEditPage").bind('click', function () {
+        axios.post("/editpage/update", {
+            content: editor.getMarkdown(),
+            tags: vm.tag,
+            title: vm.title,
+            path: vm.path
+        }).then(function (response) {
+            if (response.data.success == true) {
+                toastr.success("更新草稿成功")
+            } else {
+                toastr.warning("更新草稿失败")
+            }
+        })
+    });
 
 
 

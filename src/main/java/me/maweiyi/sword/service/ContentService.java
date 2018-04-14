@@ -17,4 +17,6 @@ public interface ContentService {
     ContentPagination findContentPagination(Integer currentPage, Integer row);
 
     Content findContentById(Integer id);
+
+    void updateContent(Content content);
 }

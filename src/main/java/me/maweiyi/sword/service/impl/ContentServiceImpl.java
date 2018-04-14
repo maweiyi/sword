@@ -41,4 +41,9 @@ public class ContentServiceImpl implements ContentService {
     public Content findContentById(Integer id) {
         return contentMapper.findContentById(id);
     }
+
+    @Override
+    public void updateContent(Content content) {
+        contentMapper.updateContent(content);
+    }
 }

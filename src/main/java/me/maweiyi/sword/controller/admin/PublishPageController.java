@@ -61,6 +61,7 @@ public class PublishPageController extends BaseController {
             content.setStatus("post");
             contentTagService.insertContentTag(content);
         } catch (Exception e) {
+
             LOGGER.error("插入文章内容以及标签错误");
             json = this.setJSON(false, "插入文章和标签错误", null);
             return json;
@@ -85,7 +86,21 @@ public class PublishPageController extends BaseController {
             json = this.setJSON(false, "返回文章内容错误", null);
             return json;
         }
+        return json;
+    }
 
+    @RequestMapping(value = "/update", method = RequestMethod.POST)
+    @ResponseBody
+    public Map<String, Object> updateContent(Content content) {
+        Map<String, Object> json = new HashMap<>();
+        try {
+            contentService.updateContent(content);
+            json = this.setJSON(true, "更新文章内容成功", null);
+        } catch (Exception e) {
+            LOGGER.error("更新文章内容错误");
+            json = this.setJSON(false, "更新文章内容失败", null);
+            return json;
+        }
         return json;
     }
 }

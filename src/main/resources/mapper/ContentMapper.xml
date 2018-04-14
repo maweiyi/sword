@@ -12,7 +12,7 @@
     </resultMap>
     <insert id="insertContent" parameterType="me.maweiyi.sword.model.entity.Content" useGeneratedKeys="true" keyProperty="id" keyColumn="id">
         INSERT INTO content(title, user_id, content, status, path) VALUES
-        (#{title}, #{user_id}, #{content}, #{status}, #{path})
+        (#{title}, #{userId}, #{content}, #{status}, #{path})
     </insert>
     <select id="findContentAll" resultType="Integer">
         SELECT COUNT(*) FROM content;
@@ -26,4 +26,7 @@
     <select id="findContentById" parameterType="Integer" resultMap="recentContent">
         SELECT * FROM content WHERE id=#{id};
     </select>
+    <update id="updateContent" parameterType="me.maweiyi.sword.model.entity.Content">
+        UPDATE content SET title=${title}, content=${content}, path=${path} WHERE id=${id}
+    </update>
 </mapper>

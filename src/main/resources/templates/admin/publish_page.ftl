@@ -110,8 +110,14 @@
                 <textarea style="display:none;" v-model="content"></textarea>
             </div>
                 <div class="col-sm-4 col-sm-offset-9">
-                    <button id="savePage" type="button" class="btn btn-w-m btn-success">保存文章</button>
-                    <button id="editPage" type="button" class="btn btn-w-m btn-warning">保存草稿</button>
+                    <#if id == -1>
+                        <button id="savePage" type="button" class="btn btn-w-m btn-success">保存文章</button>
+                        <button id="editPage" type="button" class="btn btn-w-m btn-warning">保存草稿</button>
+                        <#else>
+                        <button id="updateSavePage" type="button" class="btn btn-w-m btn-success">更新文章</button>
+                        <button id="updateEditPage" type="button" class="btn btn-w-m btn-warning">更新草稿</button>
+                    </#if>
+
                 </div>
 
 
