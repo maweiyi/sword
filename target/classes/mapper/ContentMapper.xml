@@ -27,6 +27,9 @@
         SELECT * FROM content WHERE id=#{id};
     </select>
     <update id="updateContent" parameterType="me.maweiyi.sword.model.entity.Content">
-        UPDATE content SET title=${title}, content=${content}, path=${path} WHERE id=${id}
+        UPDATE content SET title='${title}', content='${content}', path='${path}' WHERE id=${id};
     </update>
+    <delete id="deleteContent" parameterType="Integer">
+        DELETE FROM content WHERE id=#{id};
+    </delete>
 </mapper>

@@ -19,4 +19,6 @@ public interface ContentService {
     Content findContentById(Integer id);
 
     void updateContent(Content content);
+
+    void deleteContent(Integer id);
 }

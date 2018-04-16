@@ -46,4 +46,9 @@ public class ContentServiceImpl implements ContentService {
     public void updateContent(Content content) {
         contentMapper.updateContent(content);
     }
+
+    @Override
+    public void deleteContent(Integer id) {
+        contentMapper.deleteContent(id);
+    }
 }

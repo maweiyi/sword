@@ -91,9 +91,10 @@ public class PublishPageController extends BaseController {
 
     @RequestMapping(value = "/update", method = RequestMethod.POST)
     @ResponseBody
-    public Map<String, Object> updateContent(Content content) {
+    public Map<String, Object> updateContent(@RequestBody Content content) {
         Map<String, Object> json = new HashMap<>();
         try {
+
             contentService.updateContent(content);
             json = this.setJSON(true, "更新文章内容成功", null);
         } catch (Exception e) {

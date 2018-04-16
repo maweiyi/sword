@@ -10,10 +10,9 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -39,9 +38,23 @@ public class ArticleManageController extends BaseController {
     @RequestMapping("/search")
     @ResponseBody
     public ContentPagination paginationSearch(Integer pageSize, Integer pageNumber) {
-            System.out.println(pageNumber + " " + pageSize);
             return contentService.findContentPagination((pageNumber - 1) * 10, pageSize);
 
+    }
+
+    @RequestMapping(value = "/delete", method = RequestMethod.DELETE)
+    @ResponseBody
+    public Map<String, Object> deleteContent(Integer id) {
+        Map<String, Object> json = new HashMap<>();
+        try {
+            contentService.deleteContent(id);
+            json = this.setJSON(true, "删除文章成功", null);
+        } catch (Exception e) {
+            LOGGER.error("删除文章失败");
+            json = this.setJSON(false, "删除文章失败", null);
+        }
+
+        return json;
     }
 
 }

@@ -13,6 +13,7 @@
     <link href="../css/mini.css" rel="stylesheet">
     <link href="../css/style.css" rel="stylesheet">
     <link href="../plugins/table/bootstrap-table.css" rel="stylesheet">
+    <link href="../css/plugins/toastr/toastr.min.css" rel="stylesheet">
 
 </head>
 
@@ -111,10 +112,18 @@
 <script src="../plugins/axios.js"></script>
 <!--script src="../plugins/table/bootstrap-table.js"></script-->
 <script src="../plugins/bootstrap-table/bootstrap-table.min.js"></script>
+<script src="../js/plugins/toastr/toastr.min.js"></script>
 <script src="../js/admin/article_manage.js"></script>
 <script>
-    function editPages(value) {
-        console.log("AAAAA", value);
+    function deleteContent(value) {
+        //console.log("AAAAA", value);
+        axios.delete("/manage/delete", {params: {id: value}}).then(function (response) {
+            if (response.data.success == true) {
+                toastr.success("删除文章成功")
+            } else {
+                toastr.warning("删除文章失败");
+            }
+        })
     }
 </script>
 </body>

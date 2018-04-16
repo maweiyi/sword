@@ -24,4 +24,6 @@ public interface ContentMapper {
 
     void updateContent(Content content);
 
+    void deleteContent(Integer id);
+
 }

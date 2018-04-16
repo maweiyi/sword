@@ -84,6 +84,7 @@ var editor = editormd("editormd", {
     });
     $("#updateSavePage").bind('click', function () {
         axios.post("/editpage/update", {
+            id: $("#id").val(),
             content: editor.getMarkdown(),
             tags: vm.tag,
             title: vm.title,
@@ -92,12 +93,13 @@ var editor = editormd("editormd", {
             if (response.data.success == true) {
                 toastr.success("更新文章成功")
             } else {
-                toastr.warning("保存草稿失败")
+                toastr.warning("更新文章失败")
             }
         })
     });
     $("#updateEditPage").bind('click', function () {
         axios.post("/editpage/update", {
+            id: $("#id").val(),
             content: editor.getMarkdown(),
             tags: vm.tag,
             title: vm.title,
