@@ -119,9 +119,11 @@
         //console.log("AAAAA", value);
         axios.delete("/manage/delete", {params: {id: value}}).then(function (response) {
             if (response.data.success == true) {
-                toastr.success("删除文章成功")
+                toastr.success("删除文章成功");
+                window.location.reload();
             } else {
                 toastr.warning("删除文章失败");
+                window.location.reload();
             }
         })
     }

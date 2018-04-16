@@ -52,7 +52,7 @@ $(function () {
                 return [
                     "<a href=" + "/editpage/index?id=" + value + ' class="btn btn-primary btn-xs" style="margin-right: 3px">编辑</a>',
                     "<a href=" + "javascript:void(0)" + " onclick=" + "deleteContent(" + value + ")" + ' class="btn btn-warning btn-xs" style="margin-right: 3px">删除</a>',
-                    '<button class="btn btn-info btn-xs">预览</button>'
+                    "<a href=" + "/content/index?id=" + value + ' class="btn btn-primary btn-xs" style="margin-right: 3px">预览</a>'
 
                 ].join('');
             }
