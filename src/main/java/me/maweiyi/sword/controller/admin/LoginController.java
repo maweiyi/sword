@@ -18,7 +18,7 @@ import java.util.List;
  */
 
 @Controller
-@RequestMapping("/admin/log")
+@RequestMapping("/admin")
 public class LoginController {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(IndexController.class);

@@ -19,7 +19,7 @@
             }).catch(function (err) {
 
             });
-            this.$http.get("/admin/log/recentlog").then(function (response) {
+            this.$http.get("/admin/recentlog").then(function (response) {
                 vm.recentLog = response.data;
             }).catch(function (err) {
                 
