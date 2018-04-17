@@ -29,7 +29,7 @@
                             <span class="clear"> <span class="block m-t-xs"> <strong class="font-bold">MWY</strong>
                             </span></span> </a>
                             <ul class="dropdown-menu animated fadeInRight m-t-xs">
-                                <li><a href="login.html">Logout</a></li>
+                                <li><a href="/admin/logout">Logout</a></li>
                             </ul>
                         </div>
                         <div class="logo-element">
@@ -45,26 +45,9 @@
                     <li>
                         <a href="/manage/index"><i class="fa fa-diamond"></i> <span class="nav-label">文章管理</span></a>
                     </li>
-                    <li>
-                        <a href="mailbox.html"><i class="fa fa-file-text"></i> <span class="nav-label">页面管理</span></a>
-                    </li>
-                    <li>
-                        <a href="metrics.html"><i class="fa fa-cloud-upload"></i> <span class="nav-label">文件管理</span>  </a>
-                    </li>
-                    <li>
-                        <a><i class="fa fa-cubes"></i> <span class="nav-label">其它管理</span><span class="fa arrow"></span></a>
-                        <ul class="nav nav-second-level collapse">
-                            <li><a href="form_basic.html">评论管理</a></li>
-                            <li><a href="form_advanced.html">分类/标签</a></li>
-                            <li><a href="form_wizard.html">编辑模版</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fa fa-flask"></i> <span class="nav-label">主题设置</span></a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fa fa-gear"></i> <span class="nav-label">系统设置</span></a>
-                    </li>
+                    <!--li>
+                        <a href="mailbox.html"><i class="fa fa-file-text"></i> <span class="nav-label">标签管理</span></a>
+                    </li-->
                 </ul>
 
             </div>
@@ -78,7 +61,7 @@
                     </div>
                     <ul class="nav navbar-top-links navbar-right">
                         <li>
-                            <a href="login">
+                            <a href="/admin/logout">
                                 <i class="fa fa-sign-out"></i> 退出
                             </a>
                         </li>
@@ -102,20 +85,6 @@
                                     <span> 发表了 </span>
                                     <h2 class="font-bold">{{staticArticle}}</h2>
                                     <span>篇文章</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-lg-3">
-                        <div class="widget style1 lazur-bg">
-                            <div class="row">
-                                <div class="col-xs-4">
-                                    <span class="mini-stat-icon"><i class="fa fa-cloud-upload" aria-hidden="true"></i></span>
-                                </div>
-                                <div class="col-xs-8 text-right">
-                                    <span> 上传了 </span>
-                                    <h2 class="font-bold">26</h2>
-                                    <span>个附件</span>
                                 </div>
                             </div>
                         </div>
